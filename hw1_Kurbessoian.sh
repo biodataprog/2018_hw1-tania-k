@@ -14,7 +14,7 @@ du -h Ecoli-vs-Yersinia.BLASTP.tab
 
 head -25 Ecoli-vs-Yersinia.BLASTP.tab  
 tail -3 Ecoli-vs-Yersinia.BLASTP.tab
-echo wc -l
+echo wc -l Ecoli-vs-Yersinia.BLASTP.tab
 
 #4. Sorting
 
