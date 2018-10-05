@@ -19,7 +19,7 @@ wc -l Ecoli-vs-Yersinia.BLASTP.tab
 #4. Sorting
 
 wget https://biodataprog.github.io/2018_programming-intro/data/Nc3H.expr.tab
-(head -n 1 Nc3H.expr.tab && tail -n +2 Nc3H.expr.tab | sort -k 5) > Nc20H.expr.sorted.tab
+(head -n 1 Nc3H.expr.tab && tail -n +2 Nc3H.expr.tab | sort -k 6) > Nc20H.expr.sorted.tab
 head -10 Nc20H.expr.sorted.tab
 
 #5. Finding and Counting
