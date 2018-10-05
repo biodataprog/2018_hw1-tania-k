@@ -19,14 +19,14 @@ wc -l Ecoli-vs-Yersinia.BLASTP.tab
 #4. Sorting
 
 wget https://biodataprog.github.io/2018_programming-intro/data/Nc3H.expr.tab
-(head -n 1 Nc3H.expr.tab && tail -n +2 Nc3H.expr.tab | sort -k6 -nr) > Nc20H.expr.sorted.tab
+(head -n 1 Nc3H.expr.tab && tail -n +2 Nc3H.expr.tab | sort -k6, 6nr) > Nc20H.expr.sorted.tab
 head -10 Nc20H.expr.sorted.tab
 
 #5. Finding and Counting
 
 grep -i -c 'CDS  ' D_mel.63B12.gbk
 sort -k3 -n -r Ecoli-vs-Yersinia.BLASTP.tab | cut -f1,3 | grep -c 100.00
-awk ' $3 > 90.00 {print $1, $3}' Ecoli-vs-Yersinia.BLASTP.tab | sort -k3 -nr > nighty_percent.tab
+awk ' $3 > 90.00 {print $1, $3}' Ecoli-vs-Yersinia.BLASTP.tab | sort -k3, 3nr > nighty_percent.tab
 
 #6. Sort and Uniq
 
