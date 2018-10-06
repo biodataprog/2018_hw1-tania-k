@@ -26,7 +26,7 @@ head -10 Nc20H.expr.sorted.tab
 
 grep -i -c 'CDS  ' D_mel.63B12.gbk
 sort -k3 -n -r Ecoli-vs-Yersinia.BLASTP.tab | cut -f1,3 | grep -c 100.00
-awk ' $3 > 90.00 {print $1, $3}' Ecoli-vs-Yersinia.BLASTP.tab | sort -k3 -n -r > nighty_percent.tab
+awk ' $3 > 90.00 {print $1, $3}' Ecoli-vs-Yersinia.BLASTP.tab | sort -k3 -n -r | wc -l
 
 #6. Sort and Uniq
 
